@@ -13,13 +13,13 @@ const Contact = () => {
         <Col md={4} className="p-3 border border-end border-bottom border-dark">
           <h5 className="fw-bold text-center">LOCATION</h5>
           <p className="text-center">
-            Jakarta, Depok, dan Bekasi
+            Cibubur
           </p>
         </Col>
         <Col md={4} className="p-3 border border-end border-bottom border-dark">
           <h5 className="fw-bold text-center">WHATSAPP</h5>
           <p className="text-center">
-            <a href="https://wa.me/6281297693634"  target="_blank" rel="noopener noreferrer" className="text-dark text-decoration-none">+62 812-9769-3634</a>
+            <a href="https://wa.me/6281297693634" target="_blank" rel="noopener noreferrer" className="text-dark text-decoration-none">+62 812-9769-3634</a>
           </p>
         </Col>
         <Col md={4} className="p-3 border border-end border-bottom border-dark">

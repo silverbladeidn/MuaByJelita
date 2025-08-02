@@ -1,7 +1,7 @@
 import React from "react";
 import gambarHome from "../components/assets/jeje.jpg"; // Sesuaikan lokasi gambar
 import "@fontsource/great-vibes";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaFilePdf } from "react-icons/fa";
 
 
 const Service = () => {
@@ -25,19 +25,22 @@ const Service = () => {
                 <img
                     src={gambarHome}
                     alt="Gambar Home"
-                    style={{ width: "70%", maxWidth: "500%", height: "30%" }}
+                    style={{
+                        width: "100%",
+                        maxWidth: "850px", // Lebar maksimal di mobile
+                        height: "auto",
+                        borderRadius: "10px",
+                        objectFit: "contain"
+                    }}
                 />
             </div>
 
             {/* Teks & Tombol di atas gambar */}
             <div style={{
-                position: "absolute",
-                top: "64%",
-                left: "70%",
-                transform: "translate(-50%, -50%)",
+                marginTop: "20px",
                 textAlign: "center",
-                padding: "20px",
-                borderRadius: "10px"
+                color: "black",
+                padding: "10px"
             }}>
                 <a
                     href="https://api.whatsapp.com/send?phone=6281297693634"
@@ -61,7 +64,7 @@ const Service = () => {
                         transition: "all 0.3s ease-in-out", // Animasi transisi
                     }}
                     onMouseOver={(e) => {
-                        e.currentTarget.style.backgroundColor = "black";
+                        e.currentTarget.style.backgroundColor = "green";
                         e.currentTarget.style.color = "white";
                     }}
                     onMouseOut={(e) => {
@@ -69,10 +72,48 @@ const Service = () => {
                         e.currentTarget.style.color = "black";
                     }}
                 >
-                <FaWhatsapp size={29} /> View Pricelist
-            </a>
-
-        </div>
+                    <FaWhatsapp size={29} /> Chat Me For Pricelist!
+                </a>
+            </div>
+            <div style={{
+                marginTop: "20px",
+                textAlign: "center",
+                color: "black",
+                padding: "10px"
+            }}>
+                <a
+                    href="/MUAPricelist.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        display: "inline-flex",
+                        border: "2px solid black",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "10px 30px",
+                        backgroundColor: "white",
+                        color: "black",
+                        borderRadius: "5px",
+                        cursor: "pointer",
+                        marginTop: "10px",
+                        textDecoration: "none",
+                        fontWeight: "bold",
+                        gap: "15px", // Jarak antara ikon dan teks
+                        fontSize: "16px",
+                        transition: "all 0.3s ease-in-out", // Animasi transisi
+                    }}
+                    onMouseOver={(e) => {
+                        e.currentTarget.style.backgroundColor = "red";
+                        e.currentTarget.style.color = "white";
+                    }}
+                    onMouseOut={(e) => {
+                        e.currentTarget.style.backgroundColor = "white";
+                        e.currentTarget.style.color = "black";
+                    }}
+                >
+                    <FaFilePdf size={29} /> View Pricelist
+                </a>
+            </div>
         </div >
     );
 };

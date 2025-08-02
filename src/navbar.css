@@ -6,27 +6,30 @@
 }
 
 .navbar {
-  position: fixed; /* Bisa juga pakai fixed */
+  position: fixed;
+  /* Bisa juga pakai fixed */
   top: 0;
   width: 100%;
-  z-index: 1000; /* Agar tetap di atas elemen lain */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Efek bayangan hitam */
-  background-color: white; /* Pastikan navbar tetap terlihat */
+  z-index: 1000;
+  /* Agar tetap di atas elemen lain */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  /* Efek bayangan hitam */
+  background-color: white;
+  /* Pastikan navbar tetap terlihat */
 }
 
 
 .nav-link {
-    background-color: #b7b2b2;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-  }
-  
-  .nav-link:hover {
-    background-color: #c3bfbf;
-  }
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
 
-  
+.nav-link:hover {
+  background-color: #d3d2d2;
+}
