@@ -13,7 +13,7 @@ const Contact = () => {
         <Col md={4} className="p-3 border border-end border-bottom border-dark">
           <h5 className="fw-bold text-center">LOCATION</h5>
           <p className="text-center">
-            Cibubur
+            Gorontalo
           </p>
         </Col>
         <Col md={4} className="p-3 border border-end border-bottom border-dark">
@@ -39,3 +39,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
