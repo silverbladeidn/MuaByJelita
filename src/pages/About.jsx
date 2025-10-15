@@ -34,7 +34,7 @@ const About = () => {
         {/* Teks */}
         <div className="w-full md:w-2/3 text-justify px-4">
           <p className="text-lg text-gray-700 leading-relaxed">
-            Jelita Pusparini, seorang perempuan yang berdomisili di Bekasi yang mulai minat dalam Make Up Artist sejak 2024.
+            Jelita Pusparini, seorang perempuan yang saat ini berdomisili di Gorontalo memulai minat dalam Make Up Artist sejak 2024.
             Jelita ini telah tersertifikasi sebagai Make Up Artist dengan mengikuti beberapa seminar dan kelas terkait
             bidang yang diminatinya. Banyak pelanggan yang merasa puas atas hasil Make Up Jelita dan hasilnya dipasang
             sebagai portofolio Jelita.
@@ -47,3 +47,4 @@ const About = () => {
 };
 
 export default About;
+
